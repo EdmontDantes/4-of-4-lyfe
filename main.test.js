@@ -1,12 +1,51 @@
 /******************
  * YOUR CODE HERE *
  ******************/
+const  addAll = function(nums) {
+  let sumNums = 0;
+  for (const num of nums) {
+    sumNums += num;
+  }
+  return sumNums;
+}
 
+const countSpaces = function(str) {
+  let spaces = 0;
+  for (const numsSpaces of str) {
+    if (numsSpaces === ' ') {
+      spaces ++;
+    }
+  }
+  return spaces;
+}
 
+const countTrues = function(boolsArr) {
+  let countT = 0;
+  for (const boolsItems of boolsArr) {
+    if (boolsItems === true) {
+      countT++;
+    }
+  }
+  return countT;
+}
 
+const makeFriendly = function(str) {
+  let resultStr = '';
+  for (const char of str) {
+    if (char === '.') {
+      resultStr = char + '!';
+    }
+  }
+  return resultStr;
+}
 
-
-
+const cubeAll = function(numsArray) {
+  let newCubedNumsArr = [];
+  for (const nums of numsArray) {
+    newCubedNumsArr.push(nums ** 3)
+  }
+  return newCubedNumsArr;
+}
 
 /*********************************
  * OUR CODE BELOW; DO NOT TOUCH! *
