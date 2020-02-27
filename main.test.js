@@ -33,7 +33,9 @@ const makeFriendly = function(str) {
   let resultStr = '';
   for (const char of str) {
     if (char === '.') {
-      resultStr = char + '!';
+      resultStr += '!';
+    }else{
+      resultStr += char;
     }
   }
   return resultStr;
@@ -47,6 +49,29 @@ const cubeAll = function(numsArray) {
   return newCubedNumsArr;
 }
 
+const addNoises = function(animalsArray, noisesArray) {
+  const dogs = [
+    'Fido',
+    'Rolph',
+    'Maisie',
+  ];
+
+  const cats = [
+    'Garfield',
+    'Heathcliff',
+  ]
+
+  const dinos = [
+    'Barnie',
+    'Sharp Tooth',
+  ]
+  // const noises = [dogs: "Woof!", cats: "Meow!", dinos: "ROWR." ]
+
+  for (const animal of animalsArray) {
+    appendedStrArray.push(animal + 'says' + noisesArray)
+  }
+  return appendedStrArray;
+}
 /*********************************
  * OUR CODE BELOW; DO NOT TOUCH! *
  *********************************/
